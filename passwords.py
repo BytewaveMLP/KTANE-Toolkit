@@ -22,9 +22,8 @@ Enter the possible values for each letter from left to right.
 index = 1
 while True:
 	letters = set(input('Letter {}: '.format(index)))
-	passwords = {i for i in passwords if i[index] in letters}
+	passwords = {i for i in passwords if i[index - 1] in letters}
 	print(*passwords)
 	index += 1
 	if index > 5 or len(passwords) < 2:
 		break
-
