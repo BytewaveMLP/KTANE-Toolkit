@@ -9,9 +9,11 @@ Press ctrl+C to exit.
 Input format:
   [Color][Rightside position]
 Color format:
-  (R)ed   (B)lue  (K)Black
+  (1/R) Red
+  (2/B) Blue
+  (3/K) Black
 Example:
-  RB RC KC
+  RB RC kc 1a
 ''')
 
 cuts = {
@@ -19,6 +21,7 @@ cuts = {
 	'B': 'B AC B A B BC C AC A'.split(' ')[::-1],
 	'K': 'ABC AC B AC B BC AB C C'.split(' ')[::-1],
 }
+cuts['1'], cuts['2'], cuts['3'] = cuts['R'], cuts['B'], cuts['K']
 
 while True:
 	print(*(
