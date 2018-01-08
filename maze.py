@@ -242,7 +242,7 @@ def _input(*args, **kwargs):
 	while n is None:
 		try:
 			n = int(input(*args, **kwargs))
-			if not (0 <= n < 6): n = None
+			if not (1 <= n < 7): n = None
 		except ValueError:
 			pass
 	return n
