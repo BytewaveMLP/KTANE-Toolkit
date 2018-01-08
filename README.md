@@ -6,6 +6,8 @@
 
 KTANE Toolkit is a set of Python scripts that can be used to solve most Keep Talking and Nobody Explodes modules. The idea is to automate the solving of most of the modules in the game, just to see how difficult such a task would be. Note that these scripts are **not for normal play**, as using them in an actual game is **cheating** and ruins the fun. Don't ruin the fun. :(
 
+**NOTE:** These tools are built with **version code 241** in mind. If the manual is updated, these tools must be updated as well.
+
 ## Table of Contents
 
 - [Install](#install)
