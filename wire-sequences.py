@@ -9,15 +9,15 @@ Press ctrl+C to exit.
 Input format:
   [Color][Rightside position]
 Color format:
-  (1) Red   (2) Blue  (3) Black
+  (R)ed   (B)lue  (K)Black
 Example:
-  1b 2c 2b
+  RB RC KC
 ''')
 
 cuts = {
-	'1': 'C B A AC B AC ABC AB B'.split(' ')[::-1],
-	'2': 'B AC B A B BC C AC A'.split(' ')[::-1],
-	'3': 'ABC AC B AC B BC AB C C'.split(' ')[::-1],
+	'R': 'C B A AC B AC ABC AB B'.split(' ')[::-1],
+	'B': 'B AC B A B BC C AC A'.split(' ')[::-1],
+	'K': 'ABC AC B AC B BC AB C C'.split(' ')[::-1],
 }
 
 while True:
@@ -25,4 +25,3 @@ while True:
 		'Cut' if position in cuts[color].pop() else '---'
 		for color, position in input('Wires: ').strip().upper().split(' ')
 	), '\n')
-
