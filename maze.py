@@ -1,4 +1,4 @@
-#!/usr/bin/env python 3
+#!/usr/bin/env python3
 
 import operator
 import collections
@@ -284,6 +284,8 @@ while target != current:
 	target = target + directions[mirrors[s]]
 steps = steps[::-1]
 
+print()
+print('Solution:')
 print(*steps)
 print(*('{}{}'.format(len(list(g)), k) for k, g in itertools.groupby(steps)))
 
